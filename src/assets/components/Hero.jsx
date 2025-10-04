@@ -25,7 +25,7 @@ export default function Hero() {
           <img
             src="/image/4.png"
             alt="mobile"
-            className="animate-pulse lg:animate-bounce w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg"
+            className="animate-pulse h-full w-90 lg:animate-bounce max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg"
           />
         </div>
 
