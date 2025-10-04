@@ -51,25 +51,25 @@ export default function Toplist() {
   ];
 
   return (
-    <section className="py-11" id="toplist">
-      <div className="container mx-auto">
-        <h3 className="text-5xl font-bold text-center">Top Brands</h3>
-        <p className="text-center font-light py-5 text-2xl">
+    <section className="py-8 lg:py-11" id="toplist">
+      <div className="container mx-auto px-4">
+        <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">Top Brands</h3>
+        <p className="text-center font-light py-4 lg:py-5 text-lg sm:text-xl lg:text-2xl">
           Our Top selling Brands
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
           {toplist.map((list, index) => (
             <div
               key={index}
-              className="bg-slate-100 p-5 mx-auto rounded-xl mt-9 hover:scale-150 hover:shadow-2xl transition-all delay-75">
+              className="bg-slate-100 p-4 lg:p-5 mx-auto rounded-xl mt-6 lg:mt-9 hover:scale-105 lg:hover:scale-150 hover:shadow-2xl transition-all delay-75 w-full max-w-xs">
               <img
                 src={list.image}
                 alt={list.brand}
-                className="h-46 w-36 mx-auto"
+                className="h-32 sm:h-36 lg:h-46 w-24 sm:w-28 lg:w-36 mx-auto"
               />
-              <p className=" py-1">{list.rating}</p>
-              <p className="font-bold py-1">{list.brand}</p>
-              <p className="font-bold py-1">{list.price}</p>
+              <p className="py-1 text-center">{list.rating}</p>
+              <p className="font-bold py-1 text-center">{list.brand}</p>
+              <p className="font-bold py-1 text-center">{list.price}</p>
             </div>
           ))}
         </div>
